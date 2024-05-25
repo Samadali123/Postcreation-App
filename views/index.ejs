@@ -1,0 +1,89 @@
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>register or log in</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container d-flex align-items-center justify-content-center" style="width: 100vw; height:100vh;">
+        <form class="d-flex flex-column col-3 gap-3" action="/register  " method="post">
+            <input required type="text " name="username" class="input" placeholder="username">
+            <input required name="email" class="input" type="email" placeholder="Email">
+            <input required name="password" class="input" type="password" placeholder="Password">
+            <input required class="fs-4 bg-primary text-light border border-0" type="submit" value="register now">
+            <a class="text-center bg-primary text-light text-decoration-none p-2" href="/loginuser">Log In </a>
+
+        </form>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        form .input {
+            padding-left: 2vw;
+            font-size: 1.2vw;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html> -->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register or Log In</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="card p-4 shadow-sm w-100" style="max-width: 400px;">
+            <h2 class="text-center mb-4">Register</h2>
+            <form action="/register" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input required type="text" name="username" id="username" class="form-control" placeholder="Username">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input required type="email" name="email" id="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input required type="password" name="password" id="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Register Now</button>
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a href="/loginuser" class="btn btn-link">Log In</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
